@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Học Java</title>
+	<link rel="stylesheet" type="text/css" href="style.css">	
+</head>
+<body>
+	<h1>Học Javascript</h1>
+	<div id="vitri1">Vi tri cần hiển thị 0 </div>
+	<style>
+		/* Viết code CSS **/
+	</style>	
+	<script type="text/javascript">
+		// document.write("Hello world");
+		// console.log("Hello world 2");
+		// document.getElementById("vitri").innerHTML = "Chen bang javascript";
+
+		function chenJavascript(tenbienid) {
+			document.getElementById(tenbienid).innerHTML = Date();
+		}
+
+		function chenJavascriptver2(tenbienid, output) {
+			document.getElementById(tenbienid).innerHTML = output;
+		}
+
+        function chenJavascriptver3(tenbienid) {
+		let bienx='123';
+		let bieny='456';        	
+			document.getElementById(tenbienid).innerHTML = bienx + bieny;
+		}
+
+
+	</script>
+
+	<h1>Học Javascript 2</h1>
+	<div id="vitri2">Vi tri cần hiển thị 1000000</div>
+
+	<button onclick="chenJavascript('vitri1').innerHTML = Date() ">Bấm nút 1</button>
+	<button onclick="chenJavascriptver3('vitri1').innerHTML = Date() ">Bấm nút 4</button>
+	<button onclick="document.getElementById('vitri2').innerHTML = 'Chèn JS 2' ">Bấm nút 2</button>
+	<button onclick="chenJavascriptver2('vitri2','123456').innerHTML ">Bấm nút 3</button>
+
+</body>
+</html>
